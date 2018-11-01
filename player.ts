@@ -29,4 +29,11 @@ class Player {
     public get age(): number{
         return this._age;
     }
+
+    public changeScore(amount: number) {
+        this._score += amount;
+    }
+    public get score(): number{
+        return this._score;
+    }
 }

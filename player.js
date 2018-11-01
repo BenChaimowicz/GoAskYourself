@@ -29,5 +29,15 @@ var Player = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Player.prototype.changeScore = function (amount) {
+        this._score += amount;
+    };
+    Object.defineProperty(Player.prototype, "score", {
+        get: function () {
+            return this._score;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Player;
 }());
