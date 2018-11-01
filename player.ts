@@ -10,4 +10,12 @@ class Player {
     private _age: number;
     private _score: number;
     private _imageURL: string;
+
+    constructor() {
+        
+    }
+
+    public set name(name: string) {
+        this._name = name;
+    }
 }
