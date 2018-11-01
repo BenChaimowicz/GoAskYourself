@@ -18,5 +18,16 @@ var Player = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(Player.prototype, "age", {
+        get: function () {
+            return this._age;
+        },
+        set: function (age) {
+            if (age > 0 && age < 120)
+                this._age = age;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Player;
 }());
